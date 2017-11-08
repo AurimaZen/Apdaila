@@ -1,0 +1,259 @@
+.logo{
+    padding-left: 130px;
+    padding-top: 30px;
+}
+.top-header{
+    display: inline-flex; !important;
+    justify-content: space-between;
+    height: 630px;
+    width: 100%;
+    background-image: url("../images/construction-worker.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #d7d7d7;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   
+}
+.dropbtn{
+   
+   font-size: 60px;
+    width: 160px;
+    padding-top: 30px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.meniu{
+    right: 200px;
+    position: absolute;
+    z-index: 15;
+
+}
+li a:hover, .dropdown:hover .dropbtn {
+   text-decoration: none;
+    color:black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    max-width: 160px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 40;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+   
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+/*BACKGROUND SLIDERIS*/
+.wrapper {
+  overflow: hidden;
+  width: 500px;
+  
+}
+
+.sliding-background {
+  background: url("../images/panorama-room-home-design-very-nice-wonderful-under-panorama-room-interior-design-trends.jpg") repeat-x;
+  height: 630px;
+  width: 2800px;
+  animation: slide 200s linear infinite;
+   
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-3000px, 0, 0);
+  }
+}
+/*SLIDERIS TESTAS*/
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.intro {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+    /*z-index: 10;*/
+    top: 190px;
+    left: 130px;
+    padding-right:390px;
+   
+}
+
+.slider {
+	float: left;
+	position: relative;
+	width: 480px;
+	height: 220px;
+    
+    
+}
+.slider1 {
+	float: right;
+	position: relative;
+	width: 240px;
+	height: 220px;
+    
+    
+}
+.slider li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: clip .7s ease-in-out, z-index 0s .7s;
+	clip: rect(0, 100vw, 100vh, 100vw);
+	display: table;
+}
+.slider1 li {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	transition: clip .7s ease-in-out, z-index 0s .7s;
+	clip: rect(0, 100vw, 100vh, 100vw);
+	display: table;
+    
+}
+.center-y {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+  background-color: #ffe420;
+}
+.center1-y {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #d7d7d7;
+  background-color: #fff;
+    
+}
+h3 {
+	font-size: 5rem;
+	font-style: italic;
+}
+h3 + a {
+	font-size: 1.6rem;
+	display: inline-block;
+	color: #d7d7d7;
+	margin-top: 2rem;
+}
+h3, h3 + a {
+	opacity: 0;
+	transition: opacity .7s 0s, transform .5s .2s;
+	transform: translate3d(0, 50%, 0);
+}
+li.current h3, li.current h3 + a {
+	opacity: 1;
+	transition-delay: 1s;
+	transform: translate3d(0, 0, 0);
+}
+li.current {
+	z-index: 1;
+	clip: rect(0, 100vw, 100vh, 0);
+}
+li.prev {
+	clip: rect(0, 0, 100vh, 0);
+}
+.slider nav {
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 10;
+}
+.slider1 nav {
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 20;
+}
+nav a {
+	display: inline-block;
+	/*border-radius: 50%;*/
+	width: 1rem;
+	height: 0,1rem;
+  min-width: 8px;
+  min-height: 4px;
+	background: #d7d7d7;
+	margin: 0 1rem;
+  transition: transform .3s;
+}
+a.current_dot {
+    font-size: 2em;
+	transform: scale(1.4);
+}
+a.current_dot1 {
+    font-size: 2em;
+	transform: scale(1.4);
+}
+@media screen and (max-width: 700px) {
+	.slider1 {
+		width: 100%;
+		height: 30%;
+	}
+	.slider {
+		width: 100%;
+		height: 70%;
+	}
+}
+.trecias{
+    background-color: #2297d8;
+    position: absolute;
+    z-index: 25;
+    left:610px;
+    top:410px;
+    height: 220px;
+    width: 240px;
+    text-align: center; 
+    padding-top: 50px;
+}
+.trecias:hover{
+    
+    background-color: rgba(0, 0, 0, 0.5)
+}
