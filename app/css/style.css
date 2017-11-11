@@ -258,10 +258,10 @@ main{
     background-color: rgb(245, 245, 245);
 }
 .darbai{
-    display:inline-block;
+    display:list-item;
     vertical-align: text-top;
     background-color: white;
-    margin:0px auto 0px auto;
+    margin:0px, 0px, 0px, 0px;
     width: 230px;
     height: 230px; 
     border: none;!important;/*KAIP ISSPERSTI BORDERIUS*/
@@ -271,21 +271,25 @@ main{
 }
 
 .services ul{
+    display:flex;
+    justify-content: center;
      width: 100%;
     text-align: center;
     
 }
 .services1 ul{
+    display: flex;
+    justify-content: center;
      width: 100%;
     text-align: center;
     
 }
 /*ANTRA JUOSTA SLIDERIS*/
 .darbai2{
- display:inline-block;
+ display:list-item;
     vertical-align: text-top;
     background-color: white;
-    margin:0px auto 0px auto;
+    margin:0px, 0px, 0px, 0px;
     width: 460px;
     height: 230px;   
 }
