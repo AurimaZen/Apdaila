@@ -91,7 +91,7 @@ li.dropdown {
 .sliding-background {
   background: url("../images/panorama-room-home-design-very-nice-wonderful-under-panorama-room-interior-design-trends.jpg") repeat-x;
   height: 630px;
-  width: 2800px;
+  width: 2400px;
   animation: slide 200s linear infinite;
    
 }
@@ -435,7 +435,7 @@ main{
  visibility: hidden;
 } 
 .meniu{
-    right:0;
+    left:260px;
     }
 .intro {
 	position: absolute;
