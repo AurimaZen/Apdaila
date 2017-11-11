@@ -1,5 +1,9 @@
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 .logo{
-    padding-left: 130px;
+    padding-left: 220px;
     padding-top: 30px;
 }
 .top-header{
@@ -10,7 +14,7 @@
     background-image: url("../images/construction-worker.png");
     background-repeat: no-repeat;
     background-position:center;
-    background-color: #d7d7d7;
+    background-color: rgb(190, 204, 213);
     
 }
 ul {
@@ -80,7 +84,7 @@ li.dropdown {
 /*BACKGROUND SLIDERIS*/
 .wrapper {
   overflow: hidden;
-  width: 450px;
+  width: 444px;
   
 }
 
@@ -110,7 +114,7 @@ li.dropdown {
 
 .intro {
 	position: absolute;
-	width: 100%;
+	width: 98.5%;
     top: 190px;
     
 display: flex;
@@ -121,7 +125,8 @@ display: flex;
 .slider {
 	float: left;
 	position: relative;
-	width: 400px;
+    left: 20px;
+	width: 385px;
 	height: 220px;  
 }
 .slider1 {
@@ -129,7 +134,7 @@ display: flex;
 	position: relative;
 	width: 240px;
 	height: 220px;
-    margin-left: 305px;
+    margin-left: 338px;
     
 }
 .slider li {
@@ -235,10 +240,10 @@ a.current_dot1 {
     background-color: #2297d8;
     position: absolute;
     z-index: 25;
-    left:610px;
+    left:592px;
     top:410px;
     height: 220px;
-    width: 306px;
+    width: 316px;
     text-align: center; 
     padding-top: auto;
 }
@@ -247,6 +252,41 @@ a.current_dot1 {
     
     background-color: rgba(0, 0, 0, 0.5)
 }
+/*BAIGIASI HEADERIS*/
+/*PIRMA JUOSTA*/
+main{
+    background-color: rgb(245, 245, 245);
+}
+.darbai{
+    display:inline-block;
+    vertical-align: text-top;
+    background-color: white;
+    margin:0px auto 0px auto;
+    width: 230px;
+    height: 230px; 
+    border: none;!important;/*KAIP ISSPERSTI BORDERIUS*/
+}
+.navarotas:hover{
+ background-color: rgba(34, 151, 216, 0.9);
+}
+
+.services ul{
+     width: 100%;
+    text-align: center;
+    
+}
+.services1 ul{
+     width: 100%;
+    text-align: center;
+    
+}
+/*ANTRA JUOSTA SLIDERIS*/
+.slider2{
+    height: 230px;
+    width: 230px;
+    background-color: aqua;
+}
+
 /*RESPONSIVE HEADER*/
 @media only screen and (max-device-width:1200px){
         .top-header{
@@ -416,3 +456,4 @@ a.current_dot1 {
     width:200px;
 }
 }
+    /*RESPONSIVE SERVICES*/
