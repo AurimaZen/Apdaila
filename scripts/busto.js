@@ -33,4 +33,22 @@ $(document).ready(function(){
 		slides.eq($(this).index()).nextAll().removeClass('prev');
 	});
 });
+      $(function() {
+	var slider2 = $(".slider2"),
+		slides = slider2.find('li'),
+		nav = slider2.find('nav');
+
+	slides.eq(0).addClass('current');
+
+	nav.children('a').eq(0).addClass('current_dot2');
+
+	nav.on('click', 'a', function(event) {
+		event.preventDefault();
+		$(this).addClass('current_dot2').siblings().removeClass('current_dot2');
+		slides.eq($(this).index()).addClass('current').removeClass('prev').siblings().removeClass('current');
+		slides.eq($(this).index()).prevAll().addClass('prev');
+		slides.eq($(this).index()).nextAll().removeClass('prev');
+	});
+});   
+    
 });
