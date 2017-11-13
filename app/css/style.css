@@ -34,7 +34,6 @@ li a, .dropbtn {
     display: inline-block;
     color: black;
     text-align: center;
-   
     text-decoration: none;
 }
 .meniu{
@@ -166,7 +165,8 @@ li.dropdown {
     
 }
 h3 {
-	font-size: 5rem;
+	font-size: 2rem;
+    margin-bottom: 5px;
 
 }
 h3 + a {
@@ -181,6 +181,7 @@ h3, h3 + a {
 	transform: translate3d(0, 50%, 0);
 }
 li.current h3, li.current h3 + a {
+    padding-bottom: 30px;
 	opacity: 1;
 	transition-delay: 1s;
 	transform: translate3d(0, 0, 0);
