@@ -106,8 +106,8 @@ li.dropdown {
 /*SLIDERIS*/
 .intro {
 	position: absolute;
-	width: 98.5%;
-    top: 180px;
+	width: 97%;
+    top: 185px;
     display: flex;
     justify-content: center;
     height: 240px;
@@ -172,7 +172,7 @@ h3 + a {
 	font-size: 1.6rem;
 	display: inline-block;
 	color: #d7d7d7;
-	
+	margin-top: 0px;
 }
 h3, h3 + a {
 	opacity: 0;
@@ -234,8 +234,8 @@ a.current_dot1 {
     background-color: #2297d8;
     position: absolute;
     z-index: 25;
-    left:676px;
-    top:400px;
+    left:682px;
+    top:406px;
     height: 230px;
     width: 230px;
     text-align: center; 
