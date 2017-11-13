@@ -167,13 +167,12 @@ li.dropdown {
 h3 {
 	font-size: 2rem;
     margin-bottom: 5px;
-
 }
 h3 + a {
 	font-size: 1.6rem;
 	display: inline-block;
 	color: #d7d7d7;
-	margin-top: 2rem;
+	margin-top: 0px;
 }
 h3, h3 + a {
 	opacity: 0;
