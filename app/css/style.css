@@ -333,7 +333,7 @@ a.current_dot2 {
     font-size: 2em;
 	transform: scale(1.4);
 }
-/*TRECIA JUOSTA SU GELTONU/
+/*TRECIA JUOSTA SU GELTONU*/
 .services2 ul{
     display: flex;
    justify-content: center;
@@ -366,13 +366,14 @@ a.current_dot2 {
     background-size: 100% 100%;
     height: 230px;
     width: 670px;
+
 }
 #paieska h4{
     font-family: Verdana, serif;
     text-transform: uppercase;
     color: white;
     font-size: 20px;
-padding-top: 135px;
+    padding-top: 135px;
     padding-left: 150px;
 }
 /*SEARCH*/
