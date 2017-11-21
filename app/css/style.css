@@ -406,7 +406,6 @@ a.current_dot2 {
 @media only screen and (max-device-width:768px){
   .wrapper {
  width: 200px;
-      height: 530px;
 } 
 .meniu{
     right: 40px;
