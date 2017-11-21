@@ -234,7 +234,7 @@ a.current_dot1 {
     background-color: #2297d8;
     position: absolute;
     z-index: 25;
-    left:682px;
+    left:50%;
     top:408px;
     height: 230px;
     width: 230px;
