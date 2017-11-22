@@ -725,6 +725,8 @@ a.current_dot2 {
     height: 230px; 
     border: none;!important;
     background-image: url("../images/05-A%20(1).png");
+    background-repeat: no-repeat;
+    background-position: right;
     background-color: #d2dcde;
     text-align: left;
     padding-left: 30px;
@@ -748,7 +750,35 @@ a.current_dot2 {
     height: 230px; 
     border: none;!important;
 }
-
+.services3 img{
+    display: flex;
+    justify-content: flex-start;
+}
+.services img{
+    display: flex;
+    justify-content: flex-start;
+}
+/*6 EILUTE NAUJIENOS ATSILIEPIMAI*/
+.naujienos{
+    display:list-item;
+    vertical-align: text-top;
+    margin:0px, 0px, 0px, 0px;
+    width: 230px;
+    height: 230px; 
+    border: none;!important;
+    background-color: #2297d8;
+}
+.apdaila{
+   background:linear-gradient(rgba(210, 220, 222, 0.7), rgba(210, 220, 222, 0.7)),rgba(210,220,222,0.7) url("../images/1443873678_1.jpg");
+    background-size: 100% 100%;
+    display:list-item;
+    vertical-align: text-top;
+    margin:0px, 0px, 0px, 0px;
+    width: 230px;
+    height: 230px; 
+    border: none;!important;
+    
+}
 /*RESPONSIVE HEADER*/
 @media only screen and (max-device-width:1200px){
        
