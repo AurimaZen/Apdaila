@@ -53,13 +53,13 @@ $(document).ready(function(){
     /*SEARCH*/
       function expand() {
   $(".search").toggleClass("close");
-  $(".input").toggleClass("square");
+  $(".input1").toggleClass("square");
   if ($('.search').hasClass('close')) {
-    $('input').focus();
+    $('input1').focus();
   } else {
-    $('input').blur();
+    $('input1').blur();
   }
 }
 $('button').on('click', expand);
-
+    
 });
