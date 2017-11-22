@@ -5,33 +5,31 @@
 <title>Būsto apdaila</title>
 <meta name="description" content="Būsto apdaila">
     <link rel= "stylesheet" href= "app/css/style.css">
-    
     <link rel= "stylesheet" href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 </head>
 <body>
-<header>
+ <header>
     <div class="top-header">
-    <div class= "logo">
+      <div class= "logo">
         <a hreff= "#" ><img src="app/images/Logo.png.png" alt= "Logotipas"></a>
-        </div>
-        <div class="desinys">
-<ul class ="meniu"; >
+    </div>
+<div class="desinys">
+ <ul class ="meniu"; >
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">&#x2630;</a>
-    <div class="dropdown-content">
+      <div class="dropdown-content">
       <a href="#">Link 1</a>
       <a href="#">Link 2</a>
       <a href="#">Link 3</a>
       <a href="#">Link 4</a>
-    </div>
+     </div>
   </li>  
-</ul>
- <div class="wrapper";>
-  <div class="sliding-background" loop;></div>
+ </ul>
+   <div class="wrapper";>
+    <div class="sliding-background" loop;></div>
+  </div>
 </div>
-    </div>
         <!--DU SLIDERIAI-->
  <section class="intro">
      <div class="slider">
@@ -92,55 +90,73 @@
           </nav>
         </ul>
       </div>    
-	</section>       
+</section>       
         <!--CIA BAIGIASI SLIDERIAI-->
-        <div class="trecias">    
-            <h4>Susisiekite <br>nemokamai konsultacijai</h4>  
-            <img src="app/images/phone-icon.png"/>
-            <a href="tel:+37064589255">+37064589255</a>    
-        </div>
-    </div>  
+  <div class="trecias">      
+    <a href="tel:+37064589255"><h4>Susisiekite <br>nemokamai konsultacijai</h4>  
+    <img src="app/images/phone-icon.png"/>+37064589255</a>    
+  </div>
+</div>  
     </header>
-    <main>
-    <div class="services">
+     <main>
+       <div class="services">
         <ul style="margin-bottom: 0px;">
-        <li class="darbai navarotas">
-            <h2>Paslaugos</h2>
-            <p>&#9866;<br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum bibendum mollis. Nullam non dignissim leo. Sed id ante volutpat, varius nisi fermentum, lobortis sapien. Nunc elit diam, consequat ut sollicitudin sit amet, euismod pulvinar dolor</p>
-            </li>
+          <li class="darbai">
+            <label class="btn" for="modal-1">
+              <h2>Elektros instaliavimas</h2>
+               <p>&#9866;<br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum bibendum. </p>
+            </label>
+            <input class="modal-state" id="modal-1" type="checkbox" />
+     <div class="modal">
+        <label class="modal__bg" for="modal-1"></label>
+          <div class="modal__inner">
+     <label class="modal__close" for="modal-1"></label>
+        <h2>Elektros instaliavimo darbai</h2>
+         <p><img src="app/images/img_3003.JPG" alt="" style="height: 200px; width: auto;" />Aliquam in sagittis nulla. Curabitur euismod diam eget risus venenatis, sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit. Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis nisi eget imperdiet.</p>
+         </div>
+   </div>
+        </li>
         <li class="darbai">
             <img src="app/images/dezeen_Vertical-Loft-by-Shift_11.jpg" height="100%" width="100%"/>
-            </li>
+        </li>
         <li class="darbai">
-            <h2>Sąmatos</h2>
-            <p>&#9866;<br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum bibendum mollis. Nullam non dignissim leo. Sed id ante volutpat, varius nisi fermentum, lobortis sapien. Nunc elit diam, consequat ut sollicitudin sit amet, euismod pulvinar dolor</p>
+            <label class="btn" for="modal-2">
+               <h2>Gipso kartono montavimas</h2>
+                <p>&#9866;<br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum bibendum.</p></label>
+               <input class="modal-state" id="modal-2" type="checkbox" />
+         <div class="modal">
+           <label class="modal__bg" for="modal-2"></label>
+            <div class="modal__inner">
+             <label class="modal__close" for="modal-2"></label>
+              <h2>Gipso kartono sienos</h2>
+                <p><img src="app/images/Gipsas.jpg" alt="" style="height: 200px; width: auto;"/>Aliquam in sagittis nulla. Curabitur euismod diam eget risus venenatis, sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit. Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis nisi eget imperdiet.</p>
+           </div>
+        </div>
            </li>
             <li id="pirma" class="darbai">
-            <img src="app/images/Dekoratyvinis.jpg" height="100%" width="100%"/>
+             <img src="app/images/Dekoratyvinis.jpg" height="100%" width="100%"/>
             </li>
         </ul>
-        </div>
+    </div>
         <div class="services1">
-        <ul>
-       <li class="darbai2">
-            <section class="intro2">
-               
-        <ul class="slider2">
-           
-          <li>
-            <div class="center2-y">
-              <h3>Slider Title #1</h3>
-              <a href="#">View Project</a>	
-            </div>
-          </li>
-          <li >
-            <div class="center2-y">
-              <h3>Slider Title #2</h3>
-              <a href="#">View Project</a>	
-            </div>
-          </li>
+          <ul>
+            <li class="darbai2">
+              <section class="intro2"> 
+                <ul class="slider2">
+                 <li>
+                   <div class="center2-y">
+                     <h3>Slider Title #1</h3>
+                     <a href="#">View Project</a>	
+                   </div>
+                 </li>
+            <li >
+               <div class="center2-y">
+                <h3>Slider Title #2</h3>
+                <a href="#">View Project</a>	
+               </div>
+            </li>
           <li>
             <div class="center2-y">
               <h3>Slider Title #3</h3>
@@ -148,47 +164,78 @@
             </div>
           </li>
             <ul>
-          <nav>
-            <a  href="#"></a>
-            <a  href="#"></a>
-            <a  href="#"></a>
-          </nav>
-                </ul>
+              <nav>
+               <a  href="#"></a>
+               <a  href="#"></a>
+               <a  href="#"></a>
+              </nav>
+            </ul>
             </ul>     
             </section>
-            </li>
-   <li id="pirma" class="darbai"><!--cia slaidai-->
-            <img src="app/images/Narrow-Vertical-House-11.jpg" height="100%" width="100%"/>
+          </li>
+            <li id="pirma" class="darbai">
+               <img src="app/images/Narrow-Vertical-House-11.jpg" height="100%" width="100%"/>
             </li>         
-        <li class="darbai navarotas">
-            <h2>Sąmatos</h2>
-            <p>&#9866;<br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum bibendum mollis. Nullam non dignissim leo. Sed id ante volutpat, varius nisi fermentum, lobortis sapien. Nunc elit diam, consequat ut sollicitudin sit amet, euismod pulvinar dolor</p>
-           </li>
+            <li class="darbai">
+             <label class="btn" for="modal-3">
+              <h2>Tinkavimas</h2>
+               <p>&#9866;<br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum bibendum mollis.</p>
+              </label>
+               <input class="modal-state" id="modal-3" type="checkbox" />
+                <div class="modal">
+                  <label class="modal__bg" for="modal-3"></label>
+                   <div class="modal__inner">
+                   <label class="modal__close" for="modal-3"></label>
+                     <h2>Tinkavimas</h2>
+                       <p><img src="app/images/Tinkavimas.jpg" alt="" style="height: 200px; width: 250px;" />Aliquam in sagittis nulla. Curabitur euismod diam eget risus venenatis, sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit. Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis nisi eget imperdiet.</p>
+                  </div>
+                </div>
+            </li>
         </ul>
         </div>
-        <div class="services2">
-    <ul>
-        <li id="geltona">
-            <img src="app/images/price.png"/>
+          <div class="services2">
+           <ul>
+             <li>
+               <label class="btn1" for="modal-4">
+                <img src="app/images/price.png"/>
+                <h4 >Kainos</h4>
+               </label>
+            <input class="modal-state" id="modal-4" type="checkbox" />
+             <div class="modal">
+              <label class="modal__bg" for="modal-4"></label>
+                <div class="modal__inner">
+                    <label class="modal__close" for="modal-4"></label>
+              </div>
+             </div>
             </li>
-        <li id="melyna" class="darbai">
-        <img src="app/images/Contact.png" alt="Kontaktai">
-            <h4>Kontaktai</h4>
+        <li class="darbai">
+            <label class="btn2" for="modal-5">
+              <img src="app/images/Contact.png" alt="Kontaktai">
+               <h4>Kontaktai</h4>
+            </label>
+         <input class="modal-state" id="modal-5" type="checkbox" />
+          <div class="modal">
+           <label class="modal__bg" for="modal-5"></label>
+            <div class="modal__inner">
+             <label class="modal__close" for="modal-5"></label>
+<!--                <div id="googleMap" style="width:100%;height:400px;"></div>-->
+           </div>
+          </div>    
         </li>
         <li id="paieska">
-     <form id="content">
-  <input type="text" name="input" class="input">
-  <button type="reset" class="search"></button>
-</form>
+         <form id="content">
+          <input type="text" name="input1" class="input1">
+        <button type="reset" class="search"></button>
+       </form>
             <h4>Paieška</h4>
         </li>
     </ul>
         </div>
         
     </main>
- 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
  <script src="scripts/busto.js" ></script>
 
 </body>
