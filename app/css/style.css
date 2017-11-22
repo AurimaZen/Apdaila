@@ -180,10 +180,12 @@ li.current h3, li.current h3 + a {
 	transform: translate3d(0, 0, 0);
 }
 li.current {
-	z-index: 1;
+    position: absolute;
 	clip: rect(0, 100vw, 100vh, 0);
+    /*z-index: 1;*/
 }
 li.prev {
+    position: absolute;
 	clip: rect(0, 0, 100vh, 0);
 }
 .slider nav {
@@ -192,7 +194,7 @@ li.prev {
 	left: 0;
 	right: 0;
 	text-align: center;
-	z-index: 10;
+	/*z-index: 10;*/
 }
 .slider1 nav {
 	position: absolute;
@@ -200,7 +202,7 @@ li.prev {
 	left: 0;
 	right: 0;
 	text-align: center;
-	z-index: 20;
+	/*z-index: 10;*/
 }
 nav a {
 	display: inline-block;
@@ -213,7 +215,7 @@ nav a {
 	margin: 1rem 1rem;
     transition: transform .3s;
     position: relative;
-    z-index: 20;
+    /*z-index: 1;*/
 }
 a.current_dot {
     font-size: 2em;
@@ -227,12 +229,13 @@ a.current_dot1 {
 .trecias{
     background-color: #2297d8;
     position: absolute;
-    z-index: 25;
+    /*z-index: 10;*/
     left:50%;
     top:400px;
     height: 230px;
     width: 230px;
-    text-align: center; 
+    text-align: center;
+    font-family: Verdana, sans-serif;
    
 }
 
@@ -246,6 +249,8 @@ a.current_dot1 {
     font-size: 16px;
     color: white; 
     padding-top: 10px;
+}
+.trecias a{
     text-decoration: none;
 }
 .trecias img{
@@ -266,7 +271,7 @@ main{
     margin:0px, 0px, 0px, 0px;
     width: 230px;
     height: 230px; 
-    border: none;!important;/*KAIP ISSPERSTI BORDERIUS*/
+    border: none;!important;
 }
 .navarotas:hover{
  background-color: rgba(34, 151, 216, 0.9);
@@ -286,11 +291,126 @@ main{
     text-align: center;
     
 }
+/*MODAL*/
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+    z-index: 20;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .9);
+  transition: opacity .25s ease;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 50%;
+}
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+	
+  .modal__inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
+.btn {
+  cursor: pointer;
+  background: white;
+  display: inline-block;
+  padding: .5em 1em;
+  color: black;
+  border-radius: 3px;
+}
+
+.btn:hover,
+.btn:focus {
+  background: rgba(34, 151, 216, 0.9);
+}
+
+.btn:active {
+  background: rgba(34, 151, 216, 0.9);
+  box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+}
+p img {
+  max-width: 200px;
+  height: auto;
+  float: left;
+  margin: 0 1em 1em 0;
+}
 /*ANTRA JUOSTA SLIDERIS*/
 .intro2{
 	position: absolute;
-	width: 98.5%;
-    
+	width: 98.5%; 
     display: flex;
     justify-content: center;
     height: 240px;
@@ -324,6 +444,7 @@ main{
 	text-align: center;
 }
 .slider2 li {
+    position: absolute;
 	width: 100%;
 	height: 100%;
 	transition: clip .7s ease-in-out, z-index 0s .7s;
@@ -332,8 +453,7 @@ main{
 }
 li.current {
     position: absolute;
-    
-	z-index: 1;
+	/*z-index: 1;*/
 	clip: rect(0, 100vw, 100vh, 0);
 }
 li.prev {
@@ -353,24 +473,10 @@ a.current_dot2 {
     text-align: center;
     
 }
-
-
-#geltona{
-    background-color: #ffe400;
-    height: 230px;
-    width: 230px;   
-}
-#geltona img{
-    height: 35%;
-    width: auto;
-    margin-top: 60px;
-   
-}
 #melyna{
     background-color: #2297d8;
     height: 230px;
-    width: 230px;
-    
+    width: 230px;   
 }
 #melyna img{
     padding-top: 50px;
@@ -386,7 +492,6 @@ a.current_dot2 {
     background-size: 100% 100%;
     height: 230px;
     width: 670px;
-
 }
 #paieska h4{
     font-family: Verdana, serif;
@@ -419,7 +524,7 @@ a.current_dot2 {
   animation-iteration-count: 1;
 }
 
-input {
+.input1{
   box-sizing: border-box;
   width: 50px;
   height: 50px;
@@ -439,7 +544,7 @@ input {
   -ms-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
 }
-.input{
+.input1{
     margin-left: 400px;
 }
 
@@ -477,14 +582,12 @@ input {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-
 .close {
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
-
 .close:before {
   content: "";
   position: absolute;
@@ -499,7 +602,6 @@ input {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-
 .close:after {
   content: "";
   position: absolute;
@@ -513,7 +615,6 @@ input {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
 .square {
   box-sizing: border-box;
   padding: 0 40px 0 10px;
@@ -534,6 +635,65 @@ input {
   -webkit-transform: translate(-100%, -50%);
   -ms-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
+}
+/*MODAL NO HOVER KAINOS*/
+.btn1 {
+  cursor: pointer;
+  /*background: white;*/
+  display: inline-block;
+  padding: .5em 1em;
+  color: black;
+  border-radius: 3px;
+}
+
+.btn1{
+    background-color: #ffe400;
+    height: 230px;
+    width: 230px;   
+}
+.btn1 img{
+    height: 32%;
+    width: auto;
+    margin-top: 60px;   
+}
+.btn1 h4{
+   font-family: Verdana, serif;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px; 
+}
+.btn1:active {
+  background: rgba(34, 151, 216, 0.9);
+  box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+}
+
+/*MODAL NO HOVER KONTAKTAI*/
+.btn2{
+  cursor: pointer;
+  background-color: #2297d8;
+  display: inline-block;
+  padding: .5em 1em;
+  color: white;
+  border-radius: 3px;
+}
+
+.btn2{
+    background-color: #2297d8;
+    height: 230px;
+    width: 230px;     
+}
+.btn2 img{
+    padding-top: 50px; 
+}
+.btn2 h4{
+   font-family: Verdana, serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+.btn2:active {
+  background: rgba(34, 151, 216, 0.9);
+  box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
 }
 /*RESPONSIVE HEADER*/
 @media only screen and (max-device-width:1200px){
