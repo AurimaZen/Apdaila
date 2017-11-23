@@ -758,6 +758,23 @@ a.current_dot2 {
     display: flex;
     justify-content: flex-start;
 }
+/*NUMBER COUNTER*/
+.counteris{
+ color:#444;
+  width:230px;
+}
+.counter {
+ padding-top: 10px;
+ display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+  font-size:40px;
+  width:230;
+  height:50px;
+}
+.counter h4{
+    padding-top: 15px;
+}
 /*6 EILUTE NAUJIENOS ATSILIEPIMAI*/
 .naujienos{
     display:list-item;
