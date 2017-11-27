@@ -8,10 +8,10 @@
     justify-content: space-between;
     height: 630px;
     width: 100%;
-    background-image: url("../images/construction-worker.png");
+    background-image: url("../images/builder.png");
     background-repeat: no-repeat;
     background-position:center;
-    background-color: rgb(190, 204, 213);  
+    background-color:rgba(2, 16, 38, 0.7);
 }
 ul {
     list-style-type: none;
@@ -699,7 +699,7 @@ a.current_dot2 {
 .services3{
     height: 230px;
     display: flex;
-    justify-content: center;
+
     text-align: center;
 }
 .services3 ul{
@@ -709,13 +709,19 @@ a.current_dot2 {
     text-align: center;
 }
 .apie{
-    display:list-item;
-    vertical-align: text-top;
+    display: block;
     background-color: white;
     margin:0px, 0px, 0px, 0px;
     width: 460px;
     height: 230px; 
     border: none;!important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.apie img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 .apie1{
     display:list-item;
