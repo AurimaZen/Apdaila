@@ -1037,7 +1037,7 @@ footer p{
     }
     .services4 ul{
         
-        margin-left: 45px;
+        margin-left: 35px;
     }
     .footer h5{
         padding-left: 100px;
@@ -1045,47 +1045,19 @@ footer p{
 }
 
 @media only screen and (max-device-width:600px){
-  .wrapper {
- visibility: hidden;
-} 
+
 .logo{
     padding-left: 20px;
     }
-.intro {
-	position: absolute;
-	width: 80%;
-    top: 190px;
-    left: 100px;
-   height: 240px;
+      .services4 ul{
+        left: 140px;
+    }
+    #santechnika{
+    position:absolute;
+        left:240px;
+    }
 }
-.slider {
-	width: 320px;
-	height: 150px; 
-    margin-right: 0px;!important;
-}  
-    .trecias{
-    left:50%;
-    top:354px;
-    height: 230px;
-    width:200px;
-    }
-.slider nav {
-	position: absolute;
-	bottom: 15px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	z-index: 10;
-    top:130px;
-    }
-    .text {
-	margin-bottom: 40px;
-        padding-top: 0px;
-}
-    .center-y h3{
-        margin-top: 40px;
-        margin-bottom: 0px;
-    }
+
 @media only screen and (max-device-width:400px){
   .wrapper {
  visibility: hidden;
