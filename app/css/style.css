@@ -1032,6 +1032,9 @@ footer p{
     #atsiliepimai{
         width: 190px;
     }
+    .vertikalus{
+        display: none;
+    }
 }
 @media only screen and (max-device-width:600px){
   .wrapper {
