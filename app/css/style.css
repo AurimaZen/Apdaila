@@ -1035,7 +1035,15 @@ footer p{
     .vertikalus{
         display: none;
     }
+    .services4 ul{
+        
+        margin-left: 45px;
+    }
+    .footer h5{
+        padding-left: 100px;
+    }
 }
+
 @media only screen and (max-device-width:600px){
   .wrapper {
  visibility: hidden;
