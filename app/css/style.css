@@ -939,7 +939,7 @@ footer p{
    width: 320px;
 } 
 .intro {
-    left: 10px;
+    left: 80px;
 }
      .services2 ul{
     margin-left: 140px;  
@@ -976,6 +976,19 @@ footer p{
     .intro{
         width: 960px;
         left: 0px;
+    }
+    .services2 ul{
+    margin-left: 0px;  
+}
+    .square{
+        width: 300px;
+    }
+     .input1{
+    margin-left: 50px;
+}
+    .search{
+        position: absolute;
+        left:150px;
     }
 }
 @media only screen and (max-device-width:768px){
