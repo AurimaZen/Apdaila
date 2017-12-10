@@ -973,6 +973,9 @@ footer p{
     }
 }
 @media only screen and (max-device-width:900px){
+    .wrapper {
+ width: 280px;
+} 
     .intro{
         width: 960px;
         left: 0px;
@@ -989,6 +992,13 @@ footer p{
     .search{
         position: absolute;
         left:150px;
+    }
+    .services4 ul{
+        margin-right: 240px;
+        margin-left: 220px;
+    }
+    .btn1{
+        width: 190px;
     }
 }
 @media only screen and (max-device-width:768px){
