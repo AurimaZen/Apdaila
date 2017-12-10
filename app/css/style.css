@@ -1020,10 +1020,15 @@ footer p{
     .slider1 {
 	display: none;
 } 
+    .trecias{
+        left:270px;
+    }
     #pirma{
         display:none;
     }
-
+    .btn2{
+        display:none;
+    }
 }
 @media only screen and (max-device-width:600px){
   .wrapper {
