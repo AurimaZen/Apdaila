@@ -1029,6 +1029,9 @@ footer p{
     #paieska{
         display: none;
     }
+    #atsiliepimai{
+        width: 190px;
+    }
 }
 @media only screen and (max-device-width:600px){
   .wrapper {
