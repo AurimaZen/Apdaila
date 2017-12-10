@@ -1013,30 +1013,16 @@ footer p{
     z-index: 15;
     }
 .intro {
-	position: absolute;
-	width: 600px;;
-    top: 190px;
-    left: 150px;
-    height: 240px;
+	display: none;
+        
 }
 .slider {
-	width: 320px;
-	height: 150px; 
-    margin-right: 320px;
+	display: none;
 }  
     .slider1 {
 	display: none;
 } 
-    .top-header{
-    height: 530px;
-}
-    .trecias{
-    left:50%;
-    top:354px;
-    height: 185px;
-    width:185px;
-    
-}
+
 }
 @media only screen and (max-device-width:600px){
   .wrapper {
