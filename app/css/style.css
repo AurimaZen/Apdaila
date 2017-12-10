@@ -890,35 +890,60 @@ footer p{
     padding-right:  40px;
 }
 /*RESPONSIVE HEADER*/
-@media only screen and (max-device-width:1200px){
-       
-
-  .wrapper {
-   width: 363px;
-
-} 
-.intro {
-    top: 170px;
-    left: 160px;
+@media only screen and (max-device-width:1824px){
+    .services2 ul{
+    margin-left: 210px;  
+}
+    .intro{
+    left: 390px;
     width: 1000px;
     height: 240px;
+    }
 }
-.slider {
-	width: 460px;
-	height: 230px;  
-}  
-    .slider1 {
-	width: 230px;
-	height: 230px;
-    margin-right:110px;
-    margin-left: 250px;
+.wrapper {
+   width: 450px;
+}
+@media only screen and (max-device-width:1700px){
+    .intro{
+    left: 330px;
+    }
+}
+.wrapper {
+   width: 390px;
+}
+@media only screen and (max-device-width:1600px){
+.intro{
+    left: 280px;
+    } }  
+@media only screen and (max-device-width:1500px){
+.intro{
+    left: 230px;
+    } }  
+@media only screen and (max-device-width:1400px){
+.intro{
+    left: 180px;
+    } } 
+@media only screen and (max-device-width:1300px){
+.intro{
+    left: 130px;
+    } 
+  .wrapper {
+   width: 320px;
 } 
-.trecias{
-    left:50%;
-    top:408px;
-    height: 230px;
-    width:230px;
+      .services2 ul{
+    margin-left: 190px;  
 }
+} 
+@media only screen and (max-device-width:1200px){
+  .wrapper {
+   width: 320px;
+} 
+.intro {
+    left: 10px;
+}
+     .services2 ul{
+    margin-left: 140px;  
+} 
 }
 @media only screen and (max-device-width:1024px){
   .wrapper {
@@ -927,29 +952,31 @@ footer p{
 .meniu{
     right: 100px;
     }
-.intro {
-    top: 170px;
+.intro { 
     left: 40px;
-    width: 1000px;
-    height: 240px;
 }
 .slider {
-	width: 460px;
-	height: 230px; 
     left:30px;
 }  
 .slider1 {
-	width: 230px;
-	height: 230px;
     margin-right: 70px;
     margin-left: 260px;
 } 
-.trecias{
-    left: 515px;
-    top: 408px;
-    height: 230px;
-    width: 230px;
+.services2 ul{
+    margin-left: 50px;  
 }
+    .input1{
+    margin-left: 220px;
+}
+    .search{
+        left:230px;
+    }
+}
+@media only screen and (max-device-width:900px){
+    .intro{
+        width: 960px;
+        left: 0px;
+    }
 }
 @media only screen and (max-device-width:768px){
   .wrapper {
