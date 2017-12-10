@@ -1003,9 +1003,7 @@ footer p{
 }
 @media only screen and (max-device-width:768px){
   .wrapper {
- width: 200px;
-      height: 530px;
-      
+ display: none;
 } 
 .meniu{
     right: 40px;
@@ -1022,6 +1020,9 @@ footer p{
     .slider1 {
 	display: none;
 } 
+    #pirma{
+        display:none;
+    }
 
 }
 @media only screen and (max-device-width:600px){
