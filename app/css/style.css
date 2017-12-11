@@ -1051,10 +1051,14 @@ footer p{
     }
       .services4 ul{
         left: 140px;
+          margin-left: 0px;
     }
     #santechnika{
     position:absolute;
-        left:240px;
+        left:375px;
+    }
+    #atsiliepimai{
+        width: 70px;
     }
 }
 
