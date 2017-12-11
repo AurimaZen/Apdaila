@@ -1067,8 +1067,13 @@ footer p{
 .meniu{
     left:240px;
     }
-    
-    slider2{
+    #pirmasis{
+        display:none;
+    }
+    .trecias{
+        left:100px;
+    } 
+    .slider2{
         display:none;
     }
 .services4 ul{
