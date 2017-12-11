@@ -1073,19 +1073,21 @@ footer p{
     .trecias{
         left:100px;
     } 
-    .slider2{
-        display:none;
-    }
+    
 .services4 ul{
         left: 140px;
           margin-left: 0px;
+    }
+    #sevizas{
+        display:none;
+    }
+    #sevizas1{
+        display:none;
     }
     #santechnika{
     position:absolute;
         left:180px;
     }
-    #atsiliepimai{
-        display:none;
-    }
+    
 }
     /*RESPONSIVE SERVICES*/
