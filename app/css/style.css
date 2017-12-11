@@ -1088,6 +1088,9 @@ footer p{
     position:absolute;
         left:180px;
     }
+    #paskutinis{
+        display: nonr;
+    }
     
 }
     /*RESPONSIVE SERVICES*/
