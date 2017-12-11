@@ -1063,29 +1063,26 @@ footer p{
 }
 
 @media only screen and (max-device-width:400px){
-  .wrapper {
- visibility: hidden;
-} 
+  
 .meniu{
     left:240px;
     }
-.intro {
-	position: absolute;
-	width: 50%;
-    top: 190px;
-    left: 125px;
-   
-    height: 240px;
-}
-.slider {
-	width: 200px;
-	height: 150px; 
-}  
-    .trecias{
-   left:50%;
-    top:354px;
-    height: 185px;
-    width:185px;
-}
+    .btn{
+        display: none;
+    }
+    slider2{
+        display:none;
+    }
+.services4 ul{
+        left: 140px;
+          margin-left: 0px;
+    }
+    #santechnika{
+    position:absolute;
+        left:180px;
+    }
+    #atsiliepimai{
+        display:none;
+    }
 }
     /*RESPONSIVE SERVICES*/
