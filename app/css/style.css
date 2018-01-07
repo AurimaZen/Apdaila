@@ -147,16 +147,26 @@ li.dropdown {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	color: #fff;
-  background-color: #f8c32e;
+    background-color: #f8c32e;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.center-y h3{  
+	font-size: 25px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 38.5px;
+    color: #363636;
 }
 .center1-y {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
 	color: #d7d7d7;
-  background-color: #fff;
-    
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 h3 {
 	font-size: 2rem;
@@ -921,7 +931,7 @@ footer p{
     } }  
 @media only screen and (max-device-width:1400px){
 .intro{
-    left: 160px;
+    left: 155px;
     } } 
 @media only screen and (max-device-width:1300px){
 .intro{
@@ -1078,6 +1088,43 @@ footer p{
         left: 140px;
           margin-left: 0px;
     }
+    
+    .modal__inner {
+     width: 50%;
+     height: 80%;
+     position: absolute;
+     top:0;
+        left:0px;
+    }
+    .darbai{
+        width: 50%;
+    }
+    .apie1{
+        width: 50%;
+    }
+    .apie2{
+        width: 50%;
+    }
+    .naujienos{
+        display:none;
+    }
+    .class=btn1{
+       width: 50%; 
+    }
+    .class=btn2{
+       width: 50%; 
+    }
+    .paveikslas{
+    width: 100%;
+}
+    #santechnika{
+      width: 50%;
+        position:absolute;
+        left:200px;!important;
+    }
+    .counteris{
+        width: 25%;
+    }
     #sevizas{
         display:none;
     }
@@ -1087,6 +1134,17 @@ footer p{
     #santechnika{
     position:absolute;
         left:180px;
+    }
+    .grindu{
+        width: 200px;
+    }
+    .services4 ul{
+        left:50px;
+    }
+    .footer h5{
+        padding-right: 0px;
+        padding-left: 0px;
+        display: none;
     }
     #paskutinis{
         display: none;
