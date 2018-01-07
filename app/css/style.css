@@ -1059,21 +1059,76 @@ footer p{
 .logo{
     padding-left: 20px;
     }
-      .services4 ul{
-        left: 140px;
-          margin-left: 0px;
-    }
-    #santechnika{
-    position:absolute;
-        left:375px;
-    }
+     
     #atsiliepimai{
         width: 70px;
+    }
+     .modal__inner {
+     width: 50%;
+     height: 80%;
+     position: absolute;
+     top:0;
+        left:0px;
+    }
+    .darbai{
+        width: 50%;
+    }
+    .apie1{
+        width: 50%;
+    }
+    .apie2{
+        width: 50%;
+    }
+    .naujienos{
+        display:none;
+    }
+    .btn1{
+       width: 200px; 
+    }
+    .btn2{
+       width: 200px; 
+    }
+    .paveikslas{
+    width: 100%;
+}
+    #santechnika{
+        position: absolute;
+        left:50%;
+      width: 50%;
+       
+    }
+    .counteris{
+        width: 25%;
+    }
+    #sevizas{
+        display:none;
+    }
+    #sevizas1{
+        display:none;
+    }
+    }
+    .grindu{
+        
+      margin-left: 50%;
+      width: 250px;
+    }
+    .services4 ul{
+        left:50px;
+    }
+    .footer h5{
+        padding-right: 0px;
+        padding-left: 0px;
+        display: none;
+    }
+    #paskutinis{
+        display: none;
     }
 }
 
 @media only screen and (max-device-width:400px){
-  
+  .logo{
+    padding-left: 20px;
+    }
 .meniu{
     left:240px;
     }
@@ -1119,8 +1174,7 @@ footer p{
 }
     #santechnika{
       width: 50%;
-        position:absolute;
-        left:200px;!important;
+        margin-left: 20px;
     }
     .counteris{
         width: 25%;
@@ -1137,6 +1191,7 @@ footer p{
     }
     .grindu{
         width: 200px;
+        margin-left: 40px;
     }
     .services4 ul{
         left:50px;
