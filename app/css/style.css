@@ -1108,11 +1108,11 @@ footer p{
     .naujienos{
         display:none;
     }
-    .class=btn1{
-       width: 50%; 
+    .btn1{
+       width: 200px; 
     }
-    .class=btn2{
-       width: 50%; 
+    .btn2{
+       width: 200px; 
     }
     .paveikslas{
     width: 100%;
