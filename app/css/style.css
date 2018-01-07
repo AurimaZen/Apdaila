@@ -1156,7 +1156,7 @@ margin-left: 60px;
     .apie1{
         width: 50%;
     }
-    .apie2{
+    pie2{
         width: 50%;
     }
     .naujienos{
@@ -1171,6 +1171,10 @@ margin-left: 60px;
     .paveikslas{
     width: 100%;
 }
+    .services img{
+      width: 100%;
+        height: 460px;
+    }
     #santechnika{
       width: 50%;
         margin-left: 20px;
@@ -1190,10 +1194,10 @@ margin-left: 60px;
     }
     .grindu{
         width: 200px;
-margin-left: 40px;
+margin-left: 140px;
     }
     .services4 ul{
-        left:50px;
+        left:0px;
     }
     .footer h5{
         padding-right: 0px;
@@ -1203,6 +1207,7 @@ margin-left: 40px;
     #paskutinis{
         display: none;
     }
+    
     
 }
     /*RESPONSIVE SERVICES*/
