@@ -1124,7 +1124,7 @@ margin-left: 60px;
     }
 }
 
-@media only screen and (max-device-width:400px){
+@media only screen and (max-device-width:360px){
   .logo{
     padding-left: 20px;
     }
@@ -1139,12 +1139,10 @@ margin-left: 60px;
     } 
     
 .services4 ul{
-        left: 140px;
-          margin-left: 0px;
-    }
-    
+      width: 100%
+    } 
     .modal__inner {
-     width: 50%;
+     width: 70%;
      height: 80%;
      position: absolute;
      top:0;
@@ -1163,10 +1161,10 @@ margin-left: 60px;
         display:none;
     }
     .btn1{
-       width: 200px; 
+       width: 180px; 
     }
     .btn2{
-       width: 200px; 
+       width: 180px; 
     }
     .paveikslas{
     width: 100%;
@@ -1190,11 +1188,10 @@ margin-left: 60px;
     }
     #santechnika{
     position:absolute;
-        left:180px;
+        left:160px;
     }
     .grindu{
-        width: 200px;
-margin-left: 140px;
+        display:none;
     }
     .services4 ul{
         left:0px;
