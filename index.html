@@ -7,25 +7,53 @@
     <link rel= "stylesheet" href= "app/css/style.css">
     <link rel= "stylesheet" href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="shortcut icon" type="image/jpg" href="app/images/Logo.png.png">
 </head>
 <body>
  <header>
     <div class="top-header">
       <div class= "logo">
-        <a href= "https://aurimazen.github.io/Apdaila/" ><img src="app/images/Logo.png.png" alt= "Logotipas"></a>
+        <a href= "http://localhost/bootcamp/busto_apdaila/" ><img src="app/images/Logo.png.png" alt= "Logotipas"></a>
     </div>
 <div class="desinys">
- <ul class ="meniu"; >
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">&#x2630;</a>
-      <div class="dropdown-content">
-      <a href="#">Apie mus</a>
-      <a href="#">Paslaugos</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 4</a>
-     </div>
-  </li>  
- </ul>
+<!-- menu starts-->
+             <div class="menuicon">
+               <a href="#"><img id="menu-icon" src="app/images/menu.png" alt="menu"/></a>
+               <div id="main_menu" class="main_menu">
+                 <ul class=" menu">
+                   <li><a href="#projects">projects</a></li>
+                   <li><a href="#studio">studio</a></li>
+                   <li><a href="#news">news</a></li>
+                   <li><a href="#contact">contact</a> </li>
+                   <li><a href="#"><img id="exit-icon" src="app/images/exit.png" alt="exit"/></a></li>
+                 </ul>
+               </div>
+             </div>
+<!--menu ends-->
+<!--Mobile menu starts-->
+          <div class="mobilemenuicon">
+            <a href="#" onclick="openNav()"><img id="menu-icon-xs" src="app/images/menu.png" alt="menu"/></a>
+            <div id="main_menu-xs" class="main_menu_xs">
+              <div id="mySidenav" class="menu-xs sidenav">
+                <a href="javascript:void(0)" id="exit-icon-xs" class="closebtn" onclick="closeNav()">&#9587;</a>
+                <a href="#projects" onclick="closeNav()">projects</a>
+                <a href="#studio" onclick="closeNav()">studio</a>
+                <a href="#news" onclick="closeNav()">news</a>
+                <a href="#contact" onclick="closeNav()">contact</a>
+              </div>
+            </div>
+          </div>
+          <script>
+              function openNav() {
+                 document.getElementById("mySidenav").style.width = "100%";
+                 }
+              function closeNav() {
+                 document.getElementById("mySidenav").style.width = "0";
+                 }
+             function closeNav() {
+                 document.getElementById("mySidenav").style.width = "0";
+                 }
+           </script>
    <div class="wrapper";>
     <div class="sliding-background" loop;></div>
   </div>
@@ -82,11 +110,11 @@
             </div>
           </li>
         </ul>
-        <ul>
+           <ul>
           <nav>
-            <a  href="#"></a>
-            <a  href="#"></a>
-            <a  href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
           </nav>
         </ul>
       </div>    
@@ -103,9 +131,9 @@
         <ul style="margin-bottom: 0px;">
           <li class="darbai">
             <label class="btn" for="modal-1">
-              <h2>Elektros instaliavimas</h2>
-               <p>&#9866;<br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum bibendum. </p>
+              <h2>Elektros darbai</h2>
+               <p><i class="fa fa-minus" aria-hidden="true"></i><br>
+                Elektros instaliacija, varžų matavimai<br><i class="fa fa-minus" aria-hidden="true"></i><br>Elektros skydinių montavimas</p>
             </label>
             <input class="modal-state" id="modal-1" type="checkbox" />
      <div class="modal">
@@ -113,7 +141,7 @@
           <div class="modal__inner">
      <label class="modal__close" for="modal-1"></label>
         <h2>Elektros instaliavimo darbai</h2>
-         <p><img src="app/images/img_3003.JPG" alt="" style="height: 200px; width: auto;" />Aliquam in sagittis nulla. Curabitur euismod diam eget risus venenatis, sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit. Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis nisi eget imperdiet.</p>
+         <p><img src="app/images/img_3003.JPG" alt="" style="height: 200px; width: auto;" />Paruošiame sienas ir lubas elektros instaliacijoms – iškalame skyles rozetėms, griovelius laidams. Taip pat darome pačią instaliaciją kartu su sertifikuotais elektrikais. Atliekame varžų matavimus. Kai elektros instaliacija baigta, užglaistome ir paruošiame tas vietas tolimesniems apdailos darbams.</p>
          </div>
    </div>
         </li>
@@ -122,16 +150,33 @@
         </li>
         <li class="darbai">
             <label class="btn" for="modal-2">
-               <h2>Gipso kartono montavimas</h2>
-                <p>&#9866;<br>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum bibendum.</p></label>
+               <h2>Gipso kartono darbai</h2>
+                <p><i class="fa fa-minus" aria-hidden="true"></i><br>
+                 Visi darbai, susiję su gipso kartono plokščių montavimu.</p></label>
                <input class="modal-state" id="modal-2" type="checkbox" />
          <div class="modal">
            <label class="modal__bg" for="modal-2"></label>
             <div class="modal__inner">
              <label class="modal__close" for="modal-2"></label>
-              <h2>Gipso kartono sienos</h2>
-                <p><img src="app/images/Gipsas.jpg" alt="" style="height: 200px; width: auto;"/>Aliquam in sagittis nulla. Curabitur euismod diam eget risus venenatis, sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit. Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis nisi eget imperdiet.</p>
+              <h2>Teikiame gipso kartono konstrukcijų montavimo paslaugas (Knauf technologija)</h2>
+                <img src="app/images/Gipsas.jpg" alt="" style="height: 200px; width: auto;"/>
+<ol>
+<li>Lubų, mansardų sistemos</li>
+<li>Plokščių lubos – medinė apatinė konstrukcija</li>
+<li>Plokščių lubos – metalinė apatinė konstrukcija</li>
+<li>Plokščių lubos – metalinė apatinė konstrukcija (CD 60/27 toje pačioje plokštumoje)</li>
+<li>Plokščių lubos – metalinė apatinė konstrukcija (UA 50/40 + CD 60/27)</li>
+<li>Lenktos lubos – vieno, dviejų sluoksnių konstrukcija</li>
+    <li>Gipskartonio montavimas</li>
+    <li>Sienų, pertvarų, nišų sistemos</li>
+<li>Pertvara metaliniu karkasu— vienguba karkasinė konstrukcija, vieno sluoksnio plokščių danga</li>
+<li>Pertvara metaliniu karkasu — vienguba karkasinė konstrukcija, dviejų sluoksnių plokščių danga</li>
+<li>Pertvara metaliniu karkasu — vienguba karkasinė konstrukcija, trijų sluoksnių plokščių danga</li>
+<li>Pertvara metaliniu karkasu — dviguba karkasinė konstrukcija, dviejų sluoksnių plokščių danga</li>
+<li>Instaliacinė pertvara — dviguba karkasinė konstrukcija, dviejų sluoksnių plokščių danga</li>
+<li>Apsauginė pertvara — vienguba karkasinė konstrukcija, dviguba plokščių danga + cinkuota skarda</li>
+<li>Apsauginė pertvara – priešgaisrinė pertvara A1 vienguba karkasinė konstrukcija, fireboard A1, vieno sluoksnio plokščių danga</li>
+                </ol>
            </div>
         </div>
            </li>
@@ -178,9 +223,9 @@
             </li>         
             <li class="darbai">
              <label class="btn" for="modal-3">
-              <h2>Tinkavimas</h2>
-               <p>&#9866;<br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum bibendum mollis.</p>
+              <h2>Tinkavimo darbai</h2>
+               <p><i class="fa fa-minus" aria-hidden="true"></i><br>
+                Tinkuojame, lyginame, paruošiame sienas tolimesniems apdailos darbams.</p>
               </label>
                <input class="modal-state" id="modal-3" type="checkbox" />
                 <div class="modal">
@@ -188,7 +233,8 @@
                    <div class="modal__inner">
                    <label class="modal__close" for="modal-3"></label>
                      <h2>Tinkavimas</h2>
-                       <p><img src="app/images/Tinkavimas.jpg" alt="" style="height: 200px; width: 250px;" />Aliquam in sagittis nulla. Curabitur euismod diam eget risus venenatis, sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit. Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis nisi eget imperdiet.</p>
+                      <p><img src="app/images/Tinkavimas.jpg" alt="" style="height: 200px; width: 250px;"/></p>
+                       <p>Tinkavimo darbai neretai užtrunka keletą dienų. Prieš pradedant tinkavimo darbus, užtikrinamas sienų lygumas suklijuojant tinkavimo profilius, ištempiant siūlą ir tarpuose suklijuojant tarpinius profilius. Priklijuoti profiliai dienai paliekami džiūti. Atsižvelgiant į sienų briaunas, langus ir kitas ertmes galima naudoti kampinius profilius. Jei pastarieji nenaudojami, iš abiejų sienos pusių tvirtinamos lentos. Kitą dieną tęsiami tinkavimo darbai. Geriausia, šiandienius standartus atitinkančius, tinkavimus darbus atlikti kai sienos nepadegtos jokia kita danga. Sudrėkinus sienas, paruoštą tinkavimui kalkių / cemento mišinį paskirstome ant jų. Susidaręs perteklius pašalinamas dar kol paskirstytas mišinys nepradėjo stingti. Viską vėl reikia palikti džiūti iki kitos dienos. Vėliau atliekamas užtrynimas, naudojant prakoštą kalkių skiedinį sumaišytą su cementu. Tada viskas paliekama galutiniam džiuvimui, po kurio galimi tolimesni apdailos darbai.</p>
                   </div>
                 </div>
             </li>
@@ -219,7 +265,9 @@
            <label class="modal__bg" for="modal-5"></label>
             <div class="modal__inner">
              <label class="modal__close" for="modal-5"></label>
-<!--                <div id="googleMap" style="width:100%;height:400px;"></div>-->
+<iframe width="80%" height="70%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=8&center=54.8087%2C25.2182&key=AIzaSyB66Nrd6Txp6Hfh_W69I7KbZ68dGC_iMjM" allowfullscreen></iframe>
+                <h5>MB "Būsto apdaila"</h5>
+                <p>Savanoriu pr. 125B <br>Vilnius<br>+37064589255</p>
            </div>
           </div>    
         </li>
@@ -248,8 +296,7 @@
             <li class="apie1">
                 
                 <h4>Paslaugos</h4>
-                <p>&#9866;<br>Mūsų patyrę, kvalifikuoti meistrai greitai ir profesionaliai įgyvendins bet kokius kliento pageidavimus už priimtiną kainą. Naudojame šiuolaikines statybos technologijas.</p>
-                <button></button>
+                <p><i class="fa fa-minus" aria-hidden="true"></i><br>Mūsų patyrę, kvalifikuoti meistrai greitai ir profesionaliai įgyvendins bet kokius kliento pageidavimus už priimtiną kainą. Naudojame šiuolaikines statybos technologijas.</p>
              </li>
            </ul>
          </div> 
@@ -280,8 +327,8 @@
              <ul style="margin-bottom: 0px;">
                  <li class="naujienos">
                  <h4>Kokybės garantija</h4>
-                     <p>&#9866;<br/>
-                   Darbus atliekame nuo sąmatos sudarymo iki projekto galutinio įgyvendinimo, naudojant savo arba užsakovo medžiagas.  
+                     <p><i class="fa fa-minus" aria-hidden="true"></i><br/>
+                   Darbus atliekame nuo sąmatos sudarymo iki projekto galutinio įgyvendinimo.
                      </p>
                  </li>
                  <li class="darbai">
@@ -317,7 +364,11 @@
          </div>
          <div class="services">
          <ul>
-             <li class="vertikalus">Sodyba Pušų paunksmėje</li>
+             <li class="vertikalus">
+                 <h2>Sodyba Pušų paunksmėje</h2>
+                 <i class="fa fa-minus" aria-hidden="true"></i>
+                 <p>Lorem ipsum</p>
+             </li>
              <li class="paveikslas"><img src="app/images/c7002b97a6b4925548f2663c64278ff1--blue-houses-colorful-houses.jpg"/></li>
              <li>
              <label id ="santechnika"class="btn1" for="modal-7">
@@ -338,7 +389,7 @@
              <ul>
          <label class="grindu" for="modal-8">
               <h2>Grindu klojimas</h2>
-               <p>&#9866;<br>
+               <p><i class="fa fa-minus" aria-hidden="true"></i><br>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum bibendum. </p>
             </label>
             <input class="modal-state" id="modal-8" type="checkbox" />
@@ -360,7 +411,6 @@
            <label class="modal__bg" for="modal-5"></label>
             <div class="modal__inner">
              <label class="modal__close" for="modal-5"></label>
-<!--                <div id="googleMap" style="width:100%;height:400px;"></div>-->
            </div>
           </div>  
          </li>
