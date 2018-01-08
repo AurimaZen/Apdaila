@@ -1,4 +1,16 @@
 $(document).ready(function(){
+    // MENU navigation
+
+  var menuicon = document.getElementById('menu-icon');
+          var exit = document.getElementById('exit-icon');
+          var main_menu = document.getElementById('main_menu');
+          menuicon.addEventListener('click', function(){
+            main_menu.classList.toggle('open');
+          });
+
+          exit.addEventListener('click', function(){
+            main_menu.classList.toggle('open');
+          });
     $(function() {
 	var slider = $(".slider"),
 		slides = slider.find('li'),
@@ -71,7 +83,7 @@ $('button').on('click', expand);
   },
 
   {
-    duration: 15000,
+    duration: 9000,
     easing:'linear',
     step: function() {
       $this.text(Math.floor(this.countNum));
