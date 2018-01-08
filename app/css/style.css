@@ -285,7 +285,7 @@ main{
     background-color: white;
     margin:0px, 0px, 0px, 0px;
     width: 230px;
-    height: 230px; 
+    height: 230px;!important; 
     border: none;!important;
 }
 #veidas{
@@ -701,8 +701,7 @@ a.current_dot2 {
 }
 
 .btn2{
-    background-color: 
-    height: 230px;
+    height: 230px; 
     width: 230px;     
 }
 .btn2 img{
