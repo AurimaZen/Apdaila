@@ -19,62 +19,63 @@ ul {
     padding: 0;
     overflow: hidden;   
 }
-.dropbtn{
-   
-   font-size: 60px;
-    width: 160px;
-    padding-top: 30px;
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-}
-.meniu{
-    right: 200px;
-    position: absolute;
+/*aliko menu*/
+#menu-icon  {
+  max-width: 80px;
+  margin-top: 40px;
+  left:1050px;
+     position: absolute;
     z-index: 15;
-
-}
-li a:hover, .dropdown:hover .dropbtn {
-   text-decoration: none;
-    color:black;
 }
 
-li.dropdown {
-    display: inline-block;
+#exit-icon {
+  max-width: 80px;
+  align-self: center;
 }
-
-.dropdown-content {
-    display: none;
-    position: relative;
-    background-color: rgba(77,87,102,0.5);
-    max-width: 160px;
-    text-decoration: none;
-    text-transform: uppercase;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+.mobilemenuicon{
+    display:none;
+}
+.menu {
+  background-color: #d7d7d7;
+  display: inline-flex;
+  align-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  position: absolute;
     z-index: 40;
-    
+  left: 600px;
+  margin-bottom: 0px;
+  height: 80px;
+  top:39px;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;   
+.menu li{
+  list-style: none;
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1
+.menu li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding-left: 30px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-    
+.main_menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms cubic-bezier(.47,.52,.62,.97);
 }
+
+.open {
+    opacity: 1;
+    visibility: visible;
+    transition: all 300ms cubic-bezier(.47,.52,.62,.97);
+    top: 0px;
+}
+
+
+
 /*BACKGROUND SLIDERIS*/
 .wrapper {
   overflow: hidden;
@@ -168,6 +169,9 @@ li.dropdown {
     background-color: #fff;
     padding-left: 20px;
     padding-right: 20px;
+}
+.center1-y a{
+    text-decoration: none;
 }
 h3 {
 	font-size: 2rem;
@@ -361,6 +365,7 @@ main{
   padding: 1em 2em;
   height: 70%;
 }
+
 .modal__close {
   position: absolute;
   right: 1em;
@@ -696,7 +701,7 @@ a.current_dot2 {
 }
 
 .btn2{
-    background-color: #2297d8;
+    background-color: 
     height: 230px;
     width: 230px;     
 }
@@ -869,6 +874,7 @@ color: #f8c32e;
     width: 460px;
 }
 .grindu{
+    cursor: pointer;
 height: 230px;
     width: 230px;
     background-color: white;
@@ -910,6 +916,12 @@ footer p{
     width: 1000px;
     height: 240px;
     }
+   /* #menu-icon {
+    left: 1300px;
+    }
+    .menu{
+        left:840px;*/
+    }
 }
 .wrapper {
    width: 450px;
@@ -944,6 +956,12 @@ footer p{
       .services2 ul{
     margin-left: 190px;  
 }
+   /* #menu-icon  {
+        left:1040px;
+    }
+    .menu {
+        left:580px;
+    }*/
 } 
 @media only screen and (max-device-width:1200px){
   .wrapper {
@@ -960,8 +978,11 @@ footer p{
   .wrapper {
  width: 280px;
 } 
-.meniu{
-    right: 100px;
+#menu-icon  {
+        left:850px;
+    }
+    .menu {
+        left:400px;
     }
 .intro { 
     left: 40px;
@@ -984,6 +1005,78 @@ footer p{
     }
 }
 @media only screen and (max-device-width:900px){
+    #menu-icon  {
+        display:none;
+    }
+    .menuicon{
+        display: none;
+    }
+    /*mobile menu*/
+    .top-right-xs {
+  height: 630px;
+}
+    .menu{
+        display:none;
+    }  
+
+.sidenav {
+    height: 630px;
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute;
+    z-index: 1; /*Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #e9eae2;
+    overflow-x: hidden;
+    padding-top: 125px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-bottom: 1px solid rgba(2, 16, 38, 0.7);
+    border-left: 1px solid rgba(2, 16, 38, 0.7);
+    border-top: 1px solid rgba(2, 16, 38, 0.7);
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: rgba(2, 16, 38, 0.7);
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  display: block;
+  transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #ebb240;
+    text-decoration: none;
+}
+
+/* Position and style the close button */
+.sidenav .closebtn {
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    font-size: 30px;
+    margin-right: 50px;
+    max-width: 80px;
+    color: rgba(2, 16, 38, 0.7);
+}
+
+#menu-icon-xs {
+  margin-left: 60px !important;
+  margin-top: 30px;
+  max-width: 80px;
+    position: absolute;
+    z-index: 40;
+}
+
+ .top-con-xs{
+   margin-bottom: 20px;
+ }
+    .mobilemenuicon{
+        display: table;
+    }
     .wrapper {
  width: 280px;
 } 
@@ -1013,14 +1106,15 @@ footer p{
     }
 }
 @media only screen and (max-device-width:768px){
+    .logo{
+    padding-left: 20px;
+    }
+    #menu-icon-xs {
+  left: 500px !important;
+    }
   .wrapper {
  display: none;
 } 
-.meniu{
-    right: 40px;
-    position: absolute;
-    z-index: 15;
-    }
 .intro {
 	display: none;
         
@@ -1056,11 +1150,10 @@ footer p{
 }
 
 @media only screen and (max-device-width:600px){
-
-.logo{
-    padding-left: 20px;
+#menu-icon-xs {
+  left: 400px !important;
     }
-     
+   
     #atsiliepimai{
         width: 70px;
     }
@@ -1129,8 +1222,8 @@ margin-left: 60px;
   .logo{
     padding-left: 20px;
     }
-.meniu{
-    left:200px;
+#menu-icon-xs {
+  left: 180px !important;
     }
     #pirmasis{
         display:none;
